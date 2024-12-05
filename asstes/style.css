@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css */
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #3C210E;
+    letter-spacing: 0px;
+    line-height: 1.333;
+    font-weight: 500;
+    font-family: Archivo;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+a{
+   color: #3C210E;
+}
+
+p{
+    color: #3C210E;
+ }
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.container{
+    width: 1290px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0px 87px;
+}
+
+/* service setion css */
+
+section#service {
+    background-color: #F5F1ED;
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-content .item {
+    padding: 15px 15px 15px 15px;
+    max-width: 33%;
+    overflow: hidden;
+}
+
+.services-post {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 23px 30px 23px 30px;
+    position: relative;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.image-overlay {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b3957e63;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.service-content-info h5.title {
+    margin-bottom: 11px;
+    font-size: 24px;
+}
+
+.service-content-info .description {
+    line-height: 26px;
+    min-height: 160px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Archivo;
+    color: #5E5A56;
+}
+
+.tf-button-container a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3C210E;
+    text-transform: capitalize;
+}
+
+.services-post:hover {
+    background-color: transparent;
+    transition: .3s;
+}
+
+.services-post:hover .image-overlay {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.service-content-info {
+    position: relative;
+    z-index: 5;
+}
+
+.services-post:hover .title a {
+    color: #fff;
+}
+
+.services-post:hover .description {
+    color: #fff;
+}
+
+.services-post:hover .tf-button-container a {
+    color: #fff;
+}
+
+a.tf-button {position: relative;}
+
+a.tf-button:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transform: translate(0);
+    transition: .3s;
+    width: 0px;
+}
+
+a.tf-button:hover:before{
+    width: 80px;
+    transform: translate(0);
+}
+
+/* single page css */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.left-container {
+    width: 67%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.single-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.single-thumbnail img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.thumbnail-titl {
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.thumbnail-titl h4 {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.thumbnail-titl p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #9D9998;
+}
+
+.featured-content {
+    margin-top: 35px;
+}
+
+.featured-content h4 {
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+
+.featured-content p {
+    line-height: 26px;
+    color: #9d9998;
+    padding-bottom: 40px;
+}
+
+.fetured-item-content h4 {
+    font-size: 24px;
+    margin-bottom: -15px;
+}
+
+.fetured-item {
+    display: flex;
+}
+
+.featured-icon {
+    width: 13%;
+    height: 13%;
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #FEDAC2;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.fetured-item-content {
+    margin-left: 10px;
+}
+
+.featured-icon img {
+    width: 100%;
+    height: 100%;
+    font-size: 27px;
+}
+
+.fetured-item::before {
+    content: '';
+    position: relative;
+    width: 5px;
+    height: 78px;
+    background-color: #FEDAC2;
+    top: 85px;
+    left: 42px;
+}
