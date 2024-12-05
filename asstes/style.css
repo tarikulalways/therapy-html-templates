@@ -250,9 +250,38 @@ a.tf-button:hover:before{
 .fetured-item::before {
     content: '';
     position: relative;
-    width: 5px;
+    width: 4px;
     height: 78px;
     background-color: #FEDAC2;
     top: 85px;
     left: 42px;
+}
+
+.faq-title {
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #3C210E;
+    margin-bottom: 20px;
+}
+
+.faq-item-content {
+    margin-bottom: 60px;
+}
+
+.faq-item-content .item {
+    padding: 10px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.faq-item-content .item h4 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.item .active {
+    display: block !important;
 }
