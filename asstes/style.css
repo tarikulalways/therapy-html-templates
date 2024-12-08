@@ -165,10 +165,10 @@ a.tf-button:hover:before{
 }
 
 .left-container {
-    width: 67%;
+    width: 60%;
     height: auto;
     overflow: hidden;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .single-thumbnail {
@@ -284,4 +284,159 @@ a.tf-button:hover:before{
 
 .item .active {
     display: block !important;
+}
+
+.expert-therapy-item {
+    display: flex;
+}
+
+.expart-item {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.expart-img{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.expart-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    border-radius: 16px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.expart-social {
+    width: 60px;
+    height: auto;
+    background-color: red;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 40px;
+    transition: .3s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: translateX(80px);
+}
+
+.expart-social ul li {
+    list-style-type: none;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.expart-img:hover img {
+    transform: scale(1.1);
+}
+
+.expart-img:hover .expart-social{
+    transform: translateX(0px);
+}
+
+.expart-therapy-content h4 {
+    margin-bottom: 30px;
+}
+
+.expart-name-des h4 {
+    margin-bottom: 4px;
+    margin-top: -17px;
+}
+
+.right-container {
+    margin-left: 20px;
+    width: 30%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.main-form {
+    background-color: #F5F1ED;
+    padding: 20px 40px;
+    border-radius: 16px;
+}
+
+.form-content h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-input input {
+    width: 100%;
+    overflow: hidden;
+}
+
+.field-group {
+    margin-bottom: 20px;
+}
+
+.field-group input {
+    padding: 14px 10px;
+    border: sienna;
+    border-radius: 5px;
+}
+
+.field-group input:focus {
+    outline-color: #F5F1ED;
+}
+
+.field-group select {
+    width: 100%;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.field-group select:focus {
+    outline-color: #F5F1ED;
+}
+
+.field-group textarea {
+    width: 100%;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn.btn-color {
+    width: 100%;
+    padding: 14px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fedac2;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button.btn.btn-color:hover {
+    background-color: #3C210E;
+    color: #fff;
+}
+
+.field-group textarea:focus {
+    outline-color: #F5F1ED;
+}
+
+.contact-info {
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.contact-info ul li {
+    padding: 7px 0px;
 }
