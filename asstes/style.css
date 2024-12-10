@@ -168,10 +168,10 @@ a.tf-button:hover:before{
 }
 
 .main-content .left-container {
-    width: 65%;
+    width: 60%;
     height: auto;
     overflow: hidden;
-    margin-right: 20px;
+    margin: auto;
 }
 
 .single-thumbnail {
@@ -226,38 +226,35 @@ a.tf-button:hover:before{
 }
 
 .fetured-item {
+    width: 100%;
+    height: auto;
     display: flex;
+    overflow: hidden;
+    align-items: center;
 }
 
 .featured-icon {
-    width: 13%;
-    height: 13%;
+    width: 10%;
+    height: auto;
     margin-right: 10px;
-    overflow: hidden;
-    background-color: #FEDAC2;
-    border-radius: 50%;
-    padding: 20px;
-    position: relative;
+    text-align: center;
 }
 
 .fetured-item-content {
-    margin-left: 10px;
+    width: 80%;
+    height: auto;
 }
 
-.featured-icon img {
-    width: 100%;
-    height: 100%;
-    font-size: 27px;
+.featured-icon span {
+    border: 2px solid #F5F1ED;
+    padding: 20px;
+    border-radius: 21px;
+    font-size: 28px;
+    transition: .3s;
 }
 
-.fetured-item::before {
-    content: '';
-    position: relative;
-    width: 4px;
-    height: 78px;
-    background-color: #FEDAC2;
-    top: 85px;
-    left: 42px;
+.fetured-item:hover .featured-icon span {
+    background-color: #F5F1ED;
 }
 
 .faq-title {
@@ -294,19 +291,21 @@ a.tf-button:hover:before{
     width: 100%;
     height: auto;
     overflow: hidden;
-    flex-wrap: wrap;
 }
 
 .expart-item {
-    margin-right: 15px;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    overflow: hidden;
 }
 
 .expart-img{
     width: 100%;
     height: 400px;
     margin-bottom: 30px;
-    overflow: hidden !important;
     position: relative;
+    overflow: hidden;
 }
 
 .expart-img img {
@@ -316,10 +315,6 @@ a.tf-button:hover:before{
     transition: .3s;
     border-radius: 16px;
     overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 
 .expart-social {
@@ -333,7 +328,7 @@ a.tf-button:hover:before{
     position: absolute;
     top: 10px;
     right: 10px;
-    transform: translateX(80px);
+    transform: translateX(100px);
 }
 
 .expart-social ul li {
@@ -344,7 +339,7 @@ a.tf-button:hover:before{
     border-radius: 50px;
 }
 
-.expart-img:hover img {
+.expart-item:hover img {
     transform: scale(1.1);
 }
 
@@ -360,6 +355,7 @@ a.tf-button:hover:before{
     margin-bottom: 4px;
     margin-top: -17px;
 }
+
 
 
 
@@ -446,4 +442,13 @@ button.btn.btn-color:hover {
 
 .contact-info ul li {
     padding: 7px 0px;
+    list-style-type: none;
+}
+
+.more-service {
+    margin-top: 20px;
+}
+
+.service-item ul li {
+    padding: 5px;
 }

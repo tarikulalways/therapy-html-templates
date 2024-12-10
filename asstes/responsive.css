@@ -11,36 +11,73 @@
     }
 }
 
+
+
+
 /* Single Page Responsive */
-.left-container, .right-container {
-    width: 100%;
-    margin: 0;
-}
 
 .single-thumbnail img {
     height: auto;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .left-container {
-        width: 63%;
-        margin-left: 20px;
+        width: 60% !important;
+        margin-left: 20px !important;
     }
+    
+    .fetured-item {
+        flex-wrap: wrap;
+    }
+    
+    .featured-icon {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .faq-content {
+        margin-top: -50px;
+    }
+    
+    .fetured-item-content {
+        width: 100%;
+    }
+
+    .faq-title h4 {
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 2px solid #F5F1ED;
+    }
+    
+    .faq-item-content .item h4 {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+
+    /* right content */
     .right-container {
-        width: 34%;
+        width: 40% !important;
         margin-right: 20px;
     }
 }
 
-@media (min-width: 320px) {
+
+@media (max-width: 425px) {
     .main-content{
         flex-wrap: wrap;
     }
+
     .left-container {
-        width: 100%;
+        width: 100% !important;
+        margin: 20px !important;
     }
+
     .right-container {
-        width: 100%;
+        width: 100% !important;
+        margin: 20px !important;
     }
 }
 
@@ -62,13 +99,6 @@
 }
 
 /* Expert Therapy Section Responsive */
-.expert-therapy-item {
-    flex-wrap: wrap;
-}
-
-.expart-item {
-    width: 100%;
-}
 
 @media (min-width: 768px) {
     .expart-item {
@@ -101,13 +131,4 @@ h1, h2, h3, h4, h5, h6, p {
     h1, h2, h3, h4, h5, h6, p {
         font-size: 18px;
     }
-}
-
-/* Social Icon Adjustments */
-.expart-social {
-    transform: translateX(50px);
-}
-
-.expart-img:hover .expart-social {
-    transform: translateX(0);
 }
