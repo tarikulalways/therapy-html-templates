@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0px;
     line-height: 1.333;
     font-weight: 500;
-    font-family: Archivo;
+    font-family: 'Archivo';
 }
 
 h4 {
@@ -32,28 +32,31 @@ a, a:hover{
     text-decoration: none;
 }
 
-.container{
-    width: 1290px;
-    height: auto;
-    margin: 0 auto;
+.container {
+    width: 100%;
+    max-width: 1290px;
     padding: 100px 0px 87px;
+    margin: auto;
 }
 
 /* service setion css */
 
 section#service {
     background-color: #F5F1ED;
+    /* background-color: red; */
 }
 
 .service-content {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .service-content .item {
     padding: 15px 15px 15px 15px;
-    max-width: 33%;
-    overflow: hidden;
+    width: 100%;
 }
 
 .services-post {
@@ -64,7 +67,7 @@ section#service {
     padding: 23px 30px 23px 30px;
     position: relative;
     border-radius: 15px;
-    transition: .3s;
+    transition: background-color 0.3s ease; /* Transition added */
 }
 
 .image-overlay {
@@ -110,8 +113,8 @@ section#service {
 }
 
 .services-post:hover {
-    background-color: transparent;
-    transition: .3s;
+    background-color: transparent; /* On hover */
+    transition: background-color 0.3s ease; /* Ensure smooth exit */
 }
 
 .services-post:hover .image-overlay {
@@ -159,13 +162,13 @@ a.tf-button:hover:before{
 /* single page css */
 .main-content {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
-.left-container {
-    width: 60%;
+.main-content .left-container {
+    width: 65%;
     height: auto;
     overflow: hidden;
     margin-right: 20px;
@@ -282,18 +285,19 @@ a.tf-button:hover:before{
     cursor: pointer;
 }
 
-.item .active {
+.faq-item-content .item .active {
     display: block !important;
 }
 
 .expert-therapy-item {
     display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .expart-item {
-    width: 50%;
-    height: auto;
-    overflow: hidden;
     margin-right: 15px;
 }
 
@@ -357,9 +361,12 @@ a.tf-button:hover:before{
     margin-top: -17px;
 }
 
+
+
+/* right container */
 .right-container {
     margin-left: 20px;
-    width: 30%;
+    width: 35%;
     overflow: hidden;
     margin-top: 20px;
 }

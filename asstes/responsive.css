@@ -1,19 +1,113 @@
-@media (min-width: 320px){
-    /* .service-content.container {
-        flex-direction: column;
-    } */
-    
-    /* .service-content .item {
-        width: 100%;
+/* Service Section Responsive */
+@media (min-width: 768px) {
+    .service-content .item {
+        width: 50%;
     }
-
-    .image-overlay {
-        overflow: hidden;
-    } */
-    
-    /* .image-overlay img {
-        width: 100%;
-        height: 100%;
-    } */
 }
 
+@media (min-width: 992px) {
+    .service-content .item {
+        width: 33.33%;
+    }
+}
+
+/* Single Page Responsive */
+.left-container, .right-container {
+    width: 100%;
+    margin: 0;
+}
+
+.single-thumbnail img {
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .left-container {
+        width: 63%;
+        margin-left: 20px;
+    }
+    .right-container {
+        width: 34%;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 320px) {
+    .main-content{
+        flex-wrap: wrap;
+    }
+    .left-container {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+    }
+}
+
+/* Featured Content Responsive */
+.featured-content p {
+    padding-bottom: 20px;
+}
+
+/* FAQ Section Responsive */
+.faq-item-content .item h4 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+@media (min-width: 768px) {
+    .faq-item-content .item h4 {
+        font-size: 32px;
+    }
+}
+
+/* Expert Therapy Section Responsive */
+.expert-therapy-item {
+    flex-wrap: wrap;
+}
+
+.expart-item {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .expart-item {
+        width: 50%;
+    }
+}
+
+/* Form Section Responsive */
+.main-form {
+    padding: 20px 15px;
+}
+
+/* Button Responsive */
+button.btn.btn-color {
+    font-size: 18px;
+}
+
+/* Typography Adjustments */
+h1, h2, h3, h4, h5, h6, p {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6, p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    h1, h2, h3, h4, h5, h6, p {
+        font-size: 18px;
+    }
+}
+
+/* Social Icon Adjustments */
+.expart-social {
+    transform: translateX(50px);
+}
+
+.expart-img:hover .expart-social {
+    transform: translateX(0);
+}
