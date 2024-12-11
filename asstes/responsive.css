@@ -26,16 +26,13 @@
         width: 60% !important;
         margin-left: 20px !important;
     }
-    
-    .fetured-item {
-        flex-wrap: wrap;
-    }
-    
+
     .featured-icon {
-        width: 100%;
+        width: 10%;
         text-align: left;
         margin-bottom: 30px;
         margin-top: 30px;
+        margin-right: 40px;
     }
 
     .faq-content {
@@ -43,7 +40,7 @@
     }
     
     .fetured-item-content {
-        width: 100%;
+        width: 90%;
     }
 
     .faq-title h4 {
@@ -57,6 +54,11 @@
         font-weight: 600;
     }
 
+    .expart-img {
+        width: 100%;
+        height: auto;
+    }
+
     /* right content */
     .right-container {
         width: 40% !important;
@@ -65,7 +67,7 @@
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .main-content{
         flex-wrap: wrap;
     }
@@ -75,60 +77,56 @@
         margin: 20px !important;
     }
 
+    .fetured-item {
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .faq-item-content .item h4 {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+    
+    .featured-icon {
+        width: 100%;
+        height: auto;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    
+    .faq-title h4 {
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 2px solid #F5F1ED;
+    }
+    
+    .faq-content {
+        width: 100%;
+        height: auto;
+    }
+    
+    .expart-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .expart-therapy-content h4 {
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 2px solid #F5F1ED;
+    }
+
+    .featured-content h4 {
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+
+    /* right contet css */
     .right-container {
         width: 100% !important;
         margin: 20px !important;
-    }
-}
-
-/* Featured Content Responsive */
-.featured-content p {
-    padding-bottom: 20px;
-}
-
-/* FAQ Section Responsive */
-.faq-item-content .item h4 {
-    font-size: 24px;
-    line-height: 30px;
-}
-
-@media (min-width: 768px) {
-    .faq-item-content .item h4 {
-        font-size: 32px;
-    }
-}
-
-/* Expert Therapy Section Responsive */
-
-@media (min-width: 768px) {
-    .expart-item {
-        width: 50%;
-    }
-}
-
-/* Form Section Responsive */
-.main-form {
-    padding: 20px 15px;
-}
-
-/* Button Responsive */
-button.btn.btn-color {
-    font-size: 18px;
-}
-
-/* Typography Adjustments */
-h1, h2, h3, h4, h5, h6, p {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    h1, h2, h3, h4, h5, h6, p {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 992px) {
-    h1, h2, h3, h4, h5, h6, p {
-        font-size: 18px;
     }
 }
